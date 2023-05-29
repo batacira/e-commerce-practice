@@ -3,7 +3,8 @@ import Footer from "./Footer"
 const Home = () => {
     return (
         <div className="flex-grow">
-            <Footer />
+            {/* <Footer /> */}
+            <p>Home</p>
         </div>
     )
 }
