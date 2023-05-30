@@ -1,25 +1,27 @@
 import './App.css';
 import Home from './components/Home';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import Navbar from './components/Navbar';
+// import Navbar from './components/Navbar';
+import Header from './components/Header';
 import Footer from './components/Footer';
-import OurProducts from './components/OurProducts';
-import Dashboard from './components/Dashboard';
+import BackBlings from './components/BackBlings';
+import Gliders from './components/Gliders';
 import SignUp from './components/SignUp';
 import Login from './components/Login';
+import Pickaxes from './components/Pickaxes';
 
 function App() {
   return (
     <div className='flex flex-col min-h-screen bg-slate-300'>
       <Router>
-        <Navbar />
+        <Header />
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/our-products" element={<OurProducts />} />
-          <Route path="/dashboard" element={<Dashboard />} />
+          <Route path="/back-blings" element={<BackBlings />} />
+          <Route path="/gliders" element={<Gliders />} />
+          <Route path="/pickaxes" element={<Pickaxes />} />
           <Route path="/sign-up" element={<SignUp />} />
           <Route path="/login" element={<Login />} />
-
         </Routes>
         <Footer />
       </Router>

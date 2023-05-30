@@ -1,11 +1,11 @@
 import React from 'react'
 
-const Dashboard = () => {
+const Gliders = () => {
     return (
         <div>
-            Dashboard
+            Gliders
         </div>
     )
 }
 
-export default Dashboard
+export default Gliders

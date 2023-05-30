@@ -1,10 +1,11 @@
 import React from 'react'
 
-const Home = () => {
+const Pickaxes = () => {
     return (
         <div>
+            Pickaxes
         </div>
     )
 }
 
-export default Home
+export default Pickaxes

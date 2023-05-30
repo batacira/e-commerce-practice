@@ -5,6 +5,7 @@ module.exports = {
     './src/**/*.js',
     './src/**/*.tsx',
   ],
+  prefix: 'tw-',
   content: [],
   theme: {
     extend: {},

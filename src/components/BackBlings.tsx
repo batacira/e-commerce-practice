@@ -1,10 +1,11 @@
 import React from 'react'
 
-const Home = () => {
+const BackBlings = () => {
     return (
         <div>
+            Back Blings
         </div>
     )
 }
 
-export default Home
+export default BackBlings
