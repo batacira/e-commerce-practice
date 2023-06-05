@@ -9,6 +9,7 @@ import Gliders from './components/Gliders';
 import SignUp from './components/SignUp';
 import Login from './components/Login';
 import Pickaxes from './components/Pickaxes';
+import Pets from './components/Pets';
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
           <Route path="/back-blings" element={<BackBlings />} />
           <Route path="/gliders" element={<Gliders />} />
           <Route path="/pickaxes" element={<Pickaxes />} />
+          <Route path="/pets" element={<Pets />} />
           <Route path="/sign-up" element={<SignUp />} />
           <Route path="/login" element={<Login />} />
         </Routes>
