@@ -91,9 +91,9 @@ const Navbar = () => {
                 </div>
             </nav>
             {isSearchOpen && < SearchMobileBar setMobileMenuOpen={setMobileMenuOpen} />}
-            {mobileMenuOpen && <div className=" tw-bg-gradient-to-r tw-from-blue-500 tw-to-slate-500 tw-py-4 -tw-m-[1px] "> {/* pitaj za liniju */}
+            {mobileMenuOpen && <div className=" tw-bg-gradient-to-r tw-from-blue-500 tw-to-slate-500 tw-py-4 -tw-m-[1px] lg:tw-p-0"> {/* pitaj za liniju */}
 
-                <ul className='tw-flex-col tw-mx-4 tw-text-blue-900 tw-text-xl tw-bg-white tw-rounded-lg tw-text-center' >
+                <ul className='tw-flex-col tw-mx-4 tw-text-blue-900 tw-text-xl tw-bg-white tw-rounded-lg tw-text-center lg:tw-hidden'>
                     <li className=" tw-p-2  -tw-m-[1px]">
                         <NavLink to={'/back-blings'} className={getClassNameMobile}>
                             Back Blings

@@ -1,0 +1,713 @@
+{
+  "users": [
+    {
+      "email": "vuks838@gmail.com",
+      "password": "$2a$10$tLg.vXA7YAAdsI/5I3A.reZWjstdlh5jbfA/E0Ow0Z8v/MM0gEIry",
+      "id": 1
+    }
+  ],
+  "products": [
+    {
+      "id": 1,
+      "name": "2020",
+      "image": "https://progameguides.com/wp-content/uploads/2019/12/fortnite-glider-2020.jpg",
+      "description": "Make it a good one.",
+      "current_price": 200,
+      "amount": 4,
+      "rarity": "Rare",
+      "type": "Glider",
+      "ratings": {
+        "one": 3,
+        "two": 2,
+        "three": 4,
+        "four": 5,
+        "five": 5
+      },
+      "release_date": 1685310381729
+    },
+    {
+      "id": 2,
+      "name": "Aerial Acrobat",
+      "image": "https://progameguides.com/wp-content/uploads/2021/04/fortnite-glider-aerial-acrobat.jpg",
+      "description": "Keep searching, keep believing.",
+      "current_price": 200,
+      "amount": 4,
+      "rarity": "Icon Series",
+      "type": "Glider",
+      "ratings": {
+        "one": 3,
+        "two": 2,
+        "three": 4,
+        "four": 5,
+        "five": 3
+      },
+      "release_date": 1685310381729
+    },
+    {
+      "id": 3,
+      "name": "Aerial Archer",
+      "image": "https://progameguides.com/wp-content/uploads/2022/01/fortnite-glider-aerial-archer.jpg",
+      "description": "All that training's gotta be for something.",
+      "current_price": 300,
+      "amount": 4,
+      "rarity": "Marvel",
+      "type": "Glider",
+      "ratings": {
+        "one": 3,
+        "two": 2,
+        "three": 4,
+        "four": 2,
+        "five": 5
+      },
+      "release_date": 1685310381729
+    },
+    {
+      "id": 4,
+      "name": "Aerial Assault One",
+      "image": "https://progameguides.com/wp-content/uploads/2018/05/fortnite-glider-aerial-assault-one-full.jpg",
+      "description": "Fly into battle on the wings of victory.",
+      "current_price": 300,
+      "amount": 4,
+      "rarity": "Uncommon",
+      "type": "Glider",
+      "ratings": {
+        "one": 1,
+        "two": 2,
+        "three": 4,
+        "four": 5,
+        "five": 5
+      },
+      "release_date": 1685310381729
+    },
+    {
+      "id": 5,
+      "name": "Airlift",
+      "image": "https://progameguides.com/wp-content/uploads/2018/06/fortnite-glider-airlift.jpg",
+      "description": "Glide to the rescue.",
+      "current_price": 140,
+      "amount": 4,
+      "rarity": "Epic",
+      "type": "Glider",
+      "ratings": {
+        "one": 1,
+        "two": 2,
+        "three": 4,
+        "four": 3,
+        "five": 15
+      },
+      "release_date": 1685310381729
+    },
+    {
+      "id": 6,
+      "name": "Ali-Tech Plasmawings",
+      "image": "https://progameguides.com/wp-content/uploads/2022/05/fortnite-glider-ali-tech-plasmawings.jpg",
+      "description": "Soar towards a victory Royale.",
+      "current_price": 300,
+      "amount": 4,
+      "rarity": "Icon",
+      "type": "Glider",
+      "ratings": {
+        "one": 1,
+        "two": 2,
+        "three": 1,
+        "four": 5,
+        "five": 5
+      },
+      "release_date": 1685310381729
+    },
+    {
+      "id": 7,
+      "name": "Arcana",
+      "image": "https://progameguides.com/wp-content/uploads/2019/05/fortnite-glider-arcana-1.jpg",
+      "description": "Soar on wings of mystery.",
+      "current_price": 300,
+      "amount": 4,
+      "rarity": "Epic",
+      "type": "Glider",
+      "ratings": {
+        "one": 3,
+        "two": 2,
+        "three": 4,
+        "four": 5,
+        "five": 5
+      },
+      "release_date": 1685310381729
+    },
+    {
+      "id": 8,
+      "name": "Assault Bomber",
+      "image": "https://progameguides.com/wp-content/uploads/2019/05/fortnite-glider-assault-bomber.jpg",
+      "description": "Bomb's away!",
+      "current_price": 450,
+      "amount": 4,
+      "rarity": "Epic",
+      "type": "Glider",
+      "ratings": {
+        "one": 3,
+        "two": 2,
+        "three": 4,
+        "four": 5,
+        "five": 5
+      },
+      "release_date": 1685310381729
+    },
+    {
+      "id": 9,
+      "name": "Astroworld Cyclone",
+      "image": "https://progameguides.com/wp-content/uploads/2020/04/fortnite-glider-astroworld-cyclone.jpg",
+      "description": "Enjoy the ride.",
+      "current_price": 500,
+      "amount": 4,
+      "rarity": "Marvel",
+      "type": "Glider",
+      "ratings": {
+        "one": 3,
+        "two": 2,
+        "three": 4,
+        "four": 5,
+        "five": 5
+      },
+      "release_date": 1685310381729
+    },
+    {
+      "id": 10,
+      "name": "Banana Bomber",
+      "image": "https://progameguides.com/wp-content/uploads/2020/02/fortnite-glider-banana-bomber-1.jpg",
+      "description": "I expect you to fly, Agent Peely.",
+      "current_price": 350,
+      "amount": 4,
+      "rarity": "Uncommon",
+      "type": "Glider",
+      "ratings": {
+        "one": 3,
+        "two": 2,
+        "three": 4,
+        "four": 5,
+        "five": 4
+      },
+      "release_date": 1685310381729
+    },
+    {
+      "id": 11,
+      "name": "Batman’s Exo-Glider",
+      "image": "https://progameguides.com/wp-content/uploads/2021/06/fortnite-glider-Batmans-Exo-Glider.jpg",
+      "description": "Rebuilt and ready for action.",
+      "current_price": 370,
+      "amount": 4,
+      "rarity": "DC",
+      "type": "Glider",
+      "ratings": {
+        "one": 3,
+        "two": 2,
+        "three": 4,
+        "four": 5,
+        "five": 5
+      },
+      "release_date": 1685310381729
+    },
+    {
+      "id": 12,
+      "name": "Battle Bloom",
+      "image": "https://progameguides.com/wp-content/uploads/2022/06/fortnite-glider-battle-bloom.jpg",
+      "description": "Welcome to the new Reality.",
+      "current_price": 230,
+      "amount": 5,
+      "rarity": "Common",
+      "type": "Glider",
+      "ratings": {
+        "one": 3,
+        "two": 2,
+        "three": 4,
+        "four": 5,
+        "five": 5
+      },
+      "release_date": 1685310381729
+    },
+    {
+      "id": 13,
+      "name": "Batwing",
+      "image": "https://progameguides.com/wp-content/uploads/2019/09/fortnite-glider-batwing-glider.jpg",
+      "description": "Dark Knight Deployed.",
+      "current_price": 330,
+      "amount": 5,
+      "rarity": "DC",
+      "type": "Glider",
+      "ratings": {
+        "one": 3,
+        "two": 2,
+        "three": 4,
+        "four": 5,
+        "five": 5
+      },
+      "release_date": 1685310381729
+    },
+    {
+      "id": 14,
+      "name": "Bear Force One",
+      "image": "https://progameguides.com/wp-content/uploads/2018/02/fortnite-glider-bear-force-one.jpg",
+      "description": "It's so fluffy!",
+      "current_price": 300,
+      "amount": 7,
+      "rarity": "Epic",
+      "type": "Glider",
+      "ratings": {
+        "one": 3,
+        "two": 2,
+        "three": 4,
+        "four": 5,
+        "five": 5
+      },
+      "release_date": 1685310381729
+    },
+    {
+      "id": 15,
+      "name": "Beast Brella",
+      "image": "https://progameguides.com/wp-content/uploads/2022/12/fortnite-glider-Beast-Brella.jpg",
+      "description": "You Won This Beast Branded Brella in Fortnite!",
+      "current_price": 130,
+      "amount": 5,
+      "rarity": "Icon",
+      "type": "Glider",
+      "ratings": {
+        "one": 3,
+        "two": 2,
+        "three": 4,
+        "four": 5,
+        "five": 5
+      },
+      "release_date": 1685310381729
+    },
+    {
+      "id": 16,
+      "name": "Beskar Umbrella",
+      "image": "https://progameguides.com/wp-content/uploads/2021/02/fortnite-glider-Beskar-Umbrella.jpg",
+      "description": "Bears the signet of a clan of two.",
+      "current_price": 420,
+      "amount": 5,
+      "rarity": "Star Wars",
+      "type": "Glider",
+      "ratings": {
+        "one": 3,
+        "two": 2,
+        "three": 4,
+        "four": 5,
+        "five": 5
+      },
+      "release_date": 1685310381729
+    },
+    {
+      "id": 17,
+      "name": "Big Haul",
+      "image": "https://progameguides.com/wp-content/uploads/2020/02/fortnite-glider-big-haul-1.jpg",
+      "description": "Time to cash out.",
+      "current_price": 470,
+      "amount": 5,
+      "rarity": "Rare",
+      "type": "Glider",
+      "ratings": {
+        "one": 3,
+        "two": 2,
+        "three": 4,
+        "four": 5,
+        "five": 5
+      },
+      "release_date": 1685310381729
+    },
+    {
+      "id": 18,
+      "name": "Blade Raven",
+      "image": "https://progameguides.com/wp-content/uploads/2020/06/fortnite-glider-blade-raven.jpg",
+      "description": "Honor soars undaunted.",
+      "current_price": 260,
+      "amount": 2,
+      "rarity": "Epic",
+      "type": "Glider",
+      "ratings": {
+        "one": 3,
+        "two": 2,
+        "three": 4,
+        "four": 5,
+        "five": 5
+      },
+      "release_date": 1685310381729
+    },
+    {
+      "id": 19,
+      "name": "Bladey Bird",
+      "image": "https://progameguides.com/wp-content/uploads/2021/03/fortnite-glider-Bladey-Bird.jpg",
+      "description": "A cut above the rest.",
+      "current_price": 230,
+      "amount": 5,
+      "rarity": "Rare",
+      "type": "Glider",
+      "ratings": {
+        "one": 3,
+        "two": 2,
+        "three": 4,
+        "four": 5,
+        "five": 5
+      },
+      "release_date": 1685310381729
+    },
+    {
+      "id": 20,
+      "name": "Blaze",
+      "image": "https://progameguides.com/wp-content/uploads/2018/06/fortnite-glider-blaze.jpg",
+      "description": "Glide down in a blaze of glory.",
+      "current_price": 500,
+      "amount": 5,
+      "rarity": "Uncommon",
+      "type": "Glider",
+      "ratings": {
+        "one": 3,
+        "two": 2,
+        "three": 4,
+        "four": 5,
+        "five": 5
+      },
+      "release_date": 1685310381729
+    },
+    {
+      "id": 21,
+      "name": "Bombs Away!",
+      "image": "https://progameguides.com/wp-content/uploads/2020/02/fortnite-glider-bombs-away.jpg",
+      "description": "Ride the shockwave.",
+      "current_price": 230,
+      "amount": 5,
+      "rarity": "Epic",
+      "type": "Glider",
+      "ratings": {
+        "one": 3,
+        "two": 2,
+        "three": 4,
+        "four": 5,
+        "five": 5
+      },
+      "release_date": 1685310381729
+    },
+    {
+      "id": 22,
+      "name": "Boomer",
+      "image": "https://progameguides.com/wp-content/uploads/2021/06/fortnite-glider-Boomer.jpg",
+      "description": "I'd land quickly if I were you.",
+      "current_price": 280,
+      "amount": 21,
+      "rarity": "Rare",
+      "type": "Glider",
+      "ratings": {
+        "one": 3,
+        "two": 2,
+        "three": 4,
+        "four": 5,
+        "five": 5
+      },
+      "release_date": 1685310381729
+    },
+    {
+      "id": 23,
+      "name": "Bounty ‘Brella",
+      "image": "https://progameguides.com/wp-content/uploads/2020/12/fortnite-glider-Bounty-Brella.jpg",
+      "description": "Drop in and sow some chaos.",
+      "current_price": 290,
+      "amount": 15,
+      "rarity": "Common",
+      "type": "Glider",
+      "ratings": {
+        "one": 3,
+        "two": 2,
+        "three": 4,
+        "four": 5,
+        "five": 5
+      },
+      "release_date": 1685310381729
+    },
+    {
+      "id": 24,
+      "name": "Cacodemon",
+      "image": "https://progameguides.com/wp-content/uploads/2022/12/fortnite-glider-cacodemon.jpg",
+      "description": "You're toast if you get too close.",
+      "current_price": 550,
+      "amount": 3,
+      "rarity": "Gaming Legends",
+      "type": "Glider",
+      "ratings": {
+        "one": 3,
+        "two": 2,
+        "three": 4,
+        "four": 5,
+        "five": 5
+      },
+      "release_date": 1685310381729
+    },
+    {
+      "id": 25,
+      "name": "Camp Cruiser",
+      "image": "https://progameguides.com/wp-content/uploads/2019/06/fortnite-glider-camp-cruiser.jpg",
+      "description": "It's his now.",
+      "current_price": 450,
+      "amount": 21,
+      "rarity": "Rare",
+      "type": "Glider",
+      "ratings": {
+        "one": 3,
+        "two": 2,
+        "three": 4,
+        "four": 5,
+        "five": 5
+      },
+      "release_date": 1685310381729
+    },
+    {
+      "id": 26,
+      "name": "Cerberus",
+      "image": "https://progameguides.com/wp-content/uploads/2021/02/fortnite-glider-Cerberus.jpg",
+      "description": "Rise from the underworld.",
+      "current_price": 400,
+      "amount": 21,
+      "rarity": "Legendary",
+      "type": "Glider",
+      "ratings": {
+        "one": 3,
+        "two": 2,
+        "three": 4,
+        "four": 5,
+        "five": 5
+      },
+      "release_date": 1685310381729
+    },
+    {
+      "id": 28,
+      "name": "Chain Surfer",
+      "image": "https://progameguides.com/wp-content/uploads/2022/03/fortnite-glider-chain-surfer.jpg",
+      "description": "No description required.",
+      "current_price": 250,
+      "amount": 10,
+      "rarity": "Rare",
+      "type": "Glider",
+      "ratings": {
+        "one": 3,
+        "two": 2,
+        "three": 4,
+        "four": 5,
+        "five": 5
+      },
+      "release_date": 1685310381729
+    },
+    {
+      "id": 29,
+      "name": "Cheyenne Dropship",
+      "image": "https://progameguides.com/wp-content/uploads/2022/03/fortnite-glider-chain-surfer.jpg",
+      "description": "In the pipe, five by five.",
+      "current_price": 550,
+      "amount": 10,
+      "rarity": "Epic",
+      "type": "Glider",
+      "ratings": {
+        "one": 3,
+        "two": 2,
+        "three": 4,
+        "four": 5,
+        "five": 5
+      },
+      "release_date": 1685310381729
+    },
+    {
+      "id": 30,
+      "name": "Chitauri Chariot",
+      "image": "https://progameguides.com/wp-content/uploads/2021/06/fortnite-glider-Chitauri-Chariot.jpg",
+      "description": "Not of Asgard or any world known.",
+      "current_price": 290,
+      "amount": 8,
+      "rarity": "Marvel",
+      "type": "Glider",
+      "ratings": {
+        "one": 3,
+        "two": 2,
+        "three": 4,
+        "four": 5,
+        "five": 5
+      },
+      "release_date": 1685310381729
+    },
+    {
+      "id": 31,
+      "name": "Choppa",
+      "image": "https://progameguides.com/wp-content/uploads/2019/02/fortnite-glider-choppa.jpg",
+      "description": "Calling in air support.",
+      "current_price": 260,
+      "amount": 7,
+      "rarity": "Epic",
+      "type": "Glider",
+      "ratings": {
+        "one": 3,
+        "two": 2,
+        "three": 4,
+        "four": 5,
+        "five": 5
+      },
+      "release_date": 1685310381729
+    },
+    {
+      "id": 32,
+      "name": "Cloud Llama Board",
+      "image": "https://progameguides.com/wp-content/uploads/2021/06/fortnite-glider-Cloud-Llama-Board.jpg",
+      "description": "Surf the skies.",
+      "current_price": 340,
+      "amount": 17,
+      "rarity": "Legendary",
+      "type": "Glider",
+      "ratings": {
+        "one": 3,
+        "two": 2,
+        "three": 4,
+        "four": 5,
+        "five": 5
+      },
+      "release_date": 1685310381729
+    },
+    {
+      "id": 33,
+      "name": "Coaxial Blue",
+      "image": "https://progameguides.com/wp-content/uploads/2019/05/fortnite-glider-coaxial-blue.jpg",
+      "description": "Dual-rotor tactical copter.",
+      "current_price": 590,
+      "amount": 23,
+      "rarity": "Epic",
+      "type": "Glider",
+      "ratings": {
+        "one": 3,
+        "two": 2,
+        "three": 4,
+        "four": 5,
+        "five": 5
+      },
+      "release_date": 1685310381729
+    },
+    {
+      "id": 34,
+      "name": "Coaxial Copter",
+      "image": "https://progameguides.com/wp-content/uploads/2019/01/fortnite-glider-coaxial-copter.jpg",
+      "description": "Dual-rotor tactical copter.",
+      "current_price": 220,
+      "amount": 6,
+      "rarity": "Epic",
+      "type": "Glider",
+      "ratings": {
+        "one": 3,
+        "two": 2,
+        "three": 4,
+        "four": 5,
+        "five": 5
+      },
+      "release_date": 1685310381729
+    },
+    {
+      "id": 35,
+      "name": "Combocopter",
+      "image": "https://progameguides.com/wp-content/uploads/2023/02/fortnite-glider-combocopter.jpg",
+      "description": "Not of Asgard or any world known.",
+      "current_price": 460,
+      "amount": 34,
+      "rarity": "Rare",
+      "type": "Glider",
+      "ratings": {
+        "one": 3,
+        "two": 2,
+        "three": 4,
+        "four": 5,
+        "five": 5
+      },
+      "release_date": 1685310381729
+    },
+    {
+      "id": 36,
+      "name": "Conquest",
+      "image": "https://progameguides.com/wp-content/uploads/2018/07/fortnite-glider-conquest.jpg",
+      "description": "Row against the tide.",
+      "current_price": 430,
+      "amount": 5,
+      "rarity": "Epic",
+      "type": "Glider",
+      "ratings": {
+        "one": 3,
+        "two": 2,
+        "three": 4,
+        "four": 5,
+        "five": 5
+      },
+      "release_date": 1685310381729
+    },
+    {
+      "id": 37,
+      "name": "Coral Cruiser",
+      "image": "https://progameguides.com/wp-content/uploads/2018/12/fortnite-glider-coral-cruiser.jpg",
+      "description": "Ride the reef.",
+      "current_price": 150,
+      "amount": 23,
+      "rarity": "Rare",
+      "type": "Glider",
+      "ratings": {
+        "one": 3,
+        "two": 2,
+        "three": 4,
+        "four": 5,
+        "five": 5
+      },
+      "release_date": 1685310381729
+    },
+    {
+      "id": 38,
+      "name": "Counterpunch",
+      "image": "https://progameguides.com/wp-content/uploads/2022/04/fortnite-glider-counterpunch.jpg",
+      "description": "Not of Asgard or any world known.",
+      "current_price": 490,
+      "amount": 18,
+      "rarity": "Epic",
+      "type": "Glider",
+      "ratings": {
+        "one": 3,
+        "two": 2,
+        "three": 4,
+        "four": 5,
+        "five": 5
+      },
+      "release_date": 1685310381729
+    },
+    {
+      "id": 39,
+      "name": "Covered Crusader",
+      "image": "https://progameguides.com/wp-content/uploads/2018/09/fortnite-glider-covered-crusader-1.jpg",
+      "description": "Forge a trail through the frontier",
+      "current_price": 560,
+      "amount": 53,
+      "rarity": "Rare",
+      "type": "Glider",
+      "ratings": {
+        "one": 3,
+        "two": 2,
+        "three": 4,
+        "four": 5,
+        "five": 5
+      },
+      "release_date": 1685310381729
+    },
+    {
+      "id": 40,
+      "name": "Cozy Coaster",
+      "image": "https://progameguides.com/wp-content/uploads/2017/12/fortnite-glider-cozy-coaster-full.jpg",
+      "description": "Snuggle up to the firefight in holiday style.",
+      "current_price": 470,
+      "amount": 45,
+      "rarity": "Rare",
+      "type": "Glider",
+      "ratings": {
+        "one": 3,
+        "two": 2,
+        "three": 4,
+        "four": 5,
+        "five": 5
+      },
+      "release_date": 1685310381729
+    }
+  ]
+}
