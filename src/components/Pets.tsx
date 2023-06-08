@@ -2,7 +2,7 @@ import React from 'react'
 
 const Pets = () => {
     return (
-        <div>
+        <div className='tw-mt-20'>
             Pets
         </div>
     )

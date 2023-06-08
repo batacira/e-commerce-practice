@@ -3,6 +3,29 @@ import './index.css';
 import App from './App';
 import ReactDOM from "react-dom/client";
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
+import { I18nextProvider } from 'react-i18next';
+import i18n from 'i18next';
+import translationEN from '../src/locales/en/translation.json';
+import translationSR from '../src/locales/sr/translations.json';
+
+i18n.init({
+  interpolation: { escapeValue: false }, // Potrebno ako želite da koristite HTML u prevodima
+  lng: 'en', // Početni jezik (engleski u ovom slučaju)
+
+  resources: {
+    en: {
+      translation:
+        translationEN
+      ,
+    },
+    sr: {
+      translation:
+        translationSR
+      ,
+    },
+  },
+});
+
 
 const queryConfig = {
   queries: {
@@ -21,7 +44,9 @@ const root = ReactDOM.createRoot(
 root.render(
   <React.StrictMode>
     <QueryClientProvider client={queryClient}>
-      <App />
+      <I18nextProvider i18n={i18n}>
+        <App />
+      </I18nextProvider>
     </QueryClientProvider>
   </React.StrictMode>
 );

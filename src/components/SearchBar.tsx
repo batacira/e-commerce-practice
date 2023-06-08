@@ -16,7 +16,7 @@ const SearchBar = ({ expanded, toggle }: SearchBarProps) => {
     // };
     return (
         <div className='tw-hidden lg:tw-flex lg:tw-relative lg:tw-text-black'>
-            <input type="text" onFocus={toggle} onBlur={toggle} className={classNames('lg:tw-py-2 lg:tw-px-4 lg:tw-transition-transform  lg:tw-duration-500 lg:tw-ease-in-out', { '-translate-x-full lg:tw-w-[650px] lg:tw-z-10': expanded })} />
+            <input type="text" onFocus={toggle} onBlur={toggle} className={classNames('lg:tw-py-2 lg:tw-px-4 lg:tw-transition-transform  lg:tw-duration-500 lg:tw-ease-in-out', { '-translate-x-full lg:tw-w-[775px] md:tw-w-[375px] lg:tw-z-10': expanded })} />
             <AiOutlineSearch size='28px' color='gray' className={`lg:tw-absolute lg:tw-right-2 lg:tw-top-1 lg:tw-flex lg:tw-items-center lg:tw-pl-1 lg:tw-cursor-pointer lg:tw-z-20`} />
         </div>
     )

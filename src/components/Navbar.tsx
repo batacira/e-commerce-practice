@@ -7,6 +7,16 @@ import { GiHamburgerMenu } from 'react-icons/gi'
 import logo from '../assets/images/fortnite-logo-1024x324-removebg-preview.png'
 import SearchBar from "./SearchBar";
 import SearchMobileBar from "./SearchMobileBar";
+import { useTranslation, withTranslation } from 'react-i18next';
+import { useParams } from 'react-router-dom';
+import i18next from "i18next";
+import BackBlings from "./BackBlings";
+// import { http } from "../services/productService";
+
+// interface changeLangObj {
+//         en: string;
+//         sr: string;
+// }
 
 const Navbar = () => {
     const [expanded, toggle] = useToggle(false);
@@ -21,11 +31,45 @@ const Navbar = () => {
         return isActive ? 'tw-underline tw-p-2 -tw-m-[1px]' : '';
     };
 
+    const { t } = useTranslation();
+    const { en } = useParams();
+    console.log(en);
+
+    const { i18n } = useTranslation();
+
+    const changeLanguage = (language: string = 'en') => {
+        i18n.changeLanguage(language);
+        // zamenaJezika(window.location.href)
+    };
+
+    console.log(window.location.href);
+
+    const { pathname } = window.location;
+    const lang = pathname; // Pretpostavka: /navbar/:lang
+    console.log(lang);
+    // console.log(http);
+
+    function zamenaJezika(string: string) {
+        const zamene: { [key: string]: string } = {
+            en: 'sr',
+            sr: 'en',
+        };
+
+        const regex = new RegExp(Object.keys(zamene).join('|'), 'g');
+
+        return string.replace(regex, (match) => zamene[match]);
+    }
+
+
+    console.log(zamenaJezika(window.location.href));
+
+    //TODO: jezik da se promeni u url i da ostane na toj stranici i da promeni jezik
+
     return (
         <>
-            <nav className="tw-flex tw-justify-between tw-px-4 tw-items-center  tw-max-w-7xl tw-m-auto tw-text-white ">
+            <nav className="tw-flex tw-justify-between tw-px-4 tw-items-center tw-max-w-7xl tw-m-auto tw-text-white ">
                 <div className="tw-w-48 tw-flex-shrink-0" >
-                    <NavLink to='/'>
+                    <NavLink to={zamenaJezika(window.location.href)}>
                         <img src={logo} alt="logo" />
                     </NavLink>
                 </div>
@@ -42,23 +86,24 @@ const Navbar = () => {
                 {!expanded && <div className=" tw-hidden lg:tw-flex lg:tw-justify-center lg:tw-w-[500px] tw-ml-32 md:tw-ml-2 lg:tw-m-auto">
                     <ul className='tw-flex tw-space-x-5' >
                         <li>
-                            <NavLink to={'/back-blings'} className={getClassName}>
-                                Back Blings
+                            <NavLink to={`${i18n.language}/back-blings`} className={getClassName}>
+                                {/* {i18n.language === 'sr' ? 'Leđa' : 'Back Blings'} */}
+                                {t('backBlings')}
                             </NavLink>
                         </li>
                         <li>
-                            <NavLink to={'/gliders'} className={getClassName}>
-                                Gliders
+                            <NavLink to={`${i18n.language}/gliders`} className={getClassName}>
+                                {t('gliders')}
                             </NavLink>
                         </li>
                         <li>
-                            <NavLink to={'/pickaxes'} className={getClassName}>
-                                Pickaxes
+                            <NavLink to={`${i18n.language}/pickaxes`} className={getClassName}>
+                                {t('pickaxes')}
                             </NavLink>
                         </li>
                         <li>
-                            <NavLink to={'/pets'} className={getClassName}>
-                                Pets
+                            <NavLink to={`${i18n.language}/pets`} className={getClassName}>
+                                {t('pets')}
                             </NavLink>
                         </li>
                     </ul>
@@ -67,9 +112,14 @@ const Navbar = () => {
                 <div className={`tw-hidden lg:tw-flex lg:tw-justify-between tw-pl-1 tw-gap-4 tw-ml-4 `}>
                     <div className="tw-flex tw-space-x-3 tw-items-center ">
                         <div className="tw-flex tw-space-x-1 tw-text-xs">
-                            <NavLink to='/srpski'>SR</NavLink>
+                            <NavLink to={zamenaJezika(window.location.href)}>
+                                {<button onClick={() => changeLanguage('en')}>EN</button>}
+                            </NavLink>
                             <span>|</span>
-                            <NavLink to='/english'>ENG</NavLink>
+                            <NavLink to={zamenaJezika(window.location.href)}>
+                                {<button onClick={() => changeLanguage('sr')}>SR</button>}
+                            </NavLink>
+
                         </div>
                     </div>
                     <div className="tw-relative">
@@ -80,12 +130,12 @@ const Navbar = () => {
                             </div>
                         </NavLink>
                     </div>
-                    <div className="tw-flex tw-space-x-1">
-                        <NavLink to={'/sign-up'}>
-                            SignUp
+                    <div className="tw-flex tw-space-x-2 tw-w-36 tw-text-sm tw-ml-2">
+                        <NavLink to={`${i18n.language}/sign-up`}> {/* resi da pise i na engleskom*/}
+                            {t('signUp')}
                         </NavLink>
-                        <NavLink to={'/login'}>
-                            Login
+                        <NavLink to={`${i18n.language}/login`}>
+                            {t('login')}
                         </NavLink>
                     </div>
                 </div>
@@ -128,8 +178,7 @@ const Navbar = () => {
 
             </div>}
         </>
-
     )
 }
 
-export default Navbar
+export default withTranslation()(Navbar)

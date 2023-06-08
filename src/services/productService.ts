@@ -1,3 +1,4 @@
+import { useQuery } from "@tanstack/react-query";
 import axios from "axios";
 
 export interface SingleProduct {
@@ -27,13 +28,11 @@ export interface GetProducts {
     data: SingleProduct[] 
 }
 
-const http = axios.create({
+export const http = axios.create({
     baseURL: 'http://localhost:4000',
 });
 
 
-//  export const getProducts = () =>  http.get<GetProducts>('/products')
+export const getGliders = () => http.get<never, GetProducts>('/gliders');
 
- export const getProducts = () => http.get<never, GetProducts>('/products');
-    
-
+export const useGlidersQuery = () => useQuery(['gliders'], getGliders)

@@ -2,7 +2,7 @@ import React from 'react'
 
 const Pickaxes = () => {
     return (
-        <div>
+        <div className='tw-mt-20'>
             Pickaxes
         </div>
     )

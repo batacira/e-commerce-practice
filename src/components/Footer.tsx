@@ -1,6 +1,6 @@
 const Footer = () => {
     return (
-        <div className='tw-fixed tw-bottom-0 tw-w-full tw-bg-red-200'>
+        <div className=' tw-w-full tw-bg-red-200 tw-fixed  tw-bottom-0'>
             Footer
         </div>
     )
