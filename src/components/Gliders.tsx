@@ -11,8 +11,8 @@ const Gliders = () => {
 
     if (isLoading) {
         return (
-            <div className="tw-text-7xl tw-mt-52">
-                Loading...
+            <div className="tw-text-7xl tw-mt-52 xl:tw-ml-[800px]">
+                <img src="https://media.tenor.com/BxFxrSLDKCAAAAAi/gif.gif" alt="" />
             </div>
         )
     }

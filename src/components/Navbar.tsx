@@ -8,15 +8,6 @@ import logo from '../assets/images/fortnite-logo-1024x324-removebg-preview.png'
 import SearchBar from "./SearchBar";
 import SearchMobileBar from "./SearchMobileBar";
 import { useTranslation, withTranslation } from 'react-i18next';
-import { useParams } from 'react-router-dom';
-import i18next from "i18next";
-import BackBlings from "./BackBlings";
-// import { http } from "../services/productService";
-
-// interface changeLangObj {
-//         en: string;
-//         sr: string;
-// }
 
 const Navbar = () => {
     const [expanded, toggle] = useToggle(false);
@@ -32,44 +23,30 @@ const Navbar = () => {
     };
 
     const { t } = useTranslation();
-    const { en } = useParams();
-    console.log(en);
-
     const { i18n } = useTranslation();
 
     const changeLanguage = (language: string = 'en') => {
         i18n.changeLanguage(language);
-        // zamenaJezika(window.location.href)
+        zamenaJezika2(window.location.href)
     };
 
     console.log(window.location.href);
 
     const { pathname } = window.location;
-    const lang = pathname; // Pretpostavka: /navbar/:lang
-    console.log(lang);
-    // console.log(http);
+    const lang = pathname;
 
-    function zamenaJezika(string: string) {
-        const zamene: { [key: string]: string } = {
-            en: 'sr',
-            sr: 'en',
-        };
-
-        const regex = new RegExp(Object.keys(zamene).join('|'), 'g');
-
-        return string.replace(regex, (match) => zamene[match]);
+    function zamenaJezika2(string: string) {
+        return string.replace('en', 'sr').replace('sr', 'en');
     }
 
 
-    console.log(zamenaJezika(window.location.href));
-
-    //TODO: jezik da se promeni u url i da ostane na toj stranici i da promeni jezik
+    //TODO: jezik da se promeni u url i da ostane na toj stranici i da promeni jezik // dodaj za mobilni sr i en
 
     return (
         <>
             <nav className="tw-flex tw-justify-between tw-px-4 tw-items-center tw-max-w-7xl tw-m-auto tw-text-white ">
                 <div className="tw-w-48 tw-flex-shrink-0" >
-                    <NavLink to={zamenaJezika(window.location.href)}>
+                    <NavLink to={zamenaJezika2('/')}>
                         <img src={logo} alt="logo" />
                     </NavLink>
                 </div>
@@ -112,11 +89,12 @@ const Navbar = () => {
                 <div className={`tw-hidden lg:tw-flex lg:tw-justify-between tw-pl-1 tw-gap-4 tw-ml-4 `}>
                     <div className="tw-flex tw-space-x-3 tw-items-center ">
                         <div className="tw-flex tw-space-x-1 tw-text-xs">
-                            <NavLink to={zamenaJezika(window.location.href)}>
+                            {/* @ts-ignore */}
+                            <NavLink to={zamenaJezika2(lang)}>
                                 {<button onClick={() => changeLanguage('en')}>EN</button>}
                             </NavLink>
                             <span>|</span>
-                            <NavLink to={zamenaJezika(window.location.href)}>
+                            <NavLink to={zamenaJezika2(lang)}>
                                 {<button onClick={() => changeLanguage('sr')}>SR</button>}
                             </NavLink>
 
@@ -131,7 +109,7 @@ const Navbar = () => {
                         </NavLink>
                     </div>
                     <div className="tw-flex tw-space-x-2 tw-w-36 tw-text-sm tw-ml-2">
-                        <NavLink to={`${i18n.language}/sign-up`}> {/* resi da pise i na engleskom*/}
+                        <NavLink to={`${i18n.language}/sign-up`}>
                             {t('signUp')}
                         </NavLink>
                         <NavLink to={`${i18n.language}/login`}>

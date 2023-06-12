@@ -35,7 +35,7 @@ const queryConfig = {
   },
 }
 
-const queryClient = new QueryClient({ defaultOptions: queryConfig })
+const queryClient = new QueryClient({ defaultOptions: queryConfig }) //Kada koristimo defaultOptions opciju prilikom stvaranja instance, ta opcija će pregaziti inace postavljena podrazumevana (default) podesavanja.
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
@@ -50,5 +50,7 @@ root.render(
     </QueryClientProvider>
   </React.StrictMode>
 );
+
+
 
 
